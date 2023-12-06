@@ -1,7 +1,7 @@
 import path from "path"
 import fs from "fs"
 
-const txtPath = path.join(__dirname, "questions.txt")
+const txtPath = path.join(process.cwd(), "questions.txt")
 const txt = fs.readFileSync(txtPath, "utf-8")
 const questions = txt.split("\n")
 
